@@ -1,3 +1,11 @@
+/*
+ * This particular one gave me fits because of a wrapper type issue.  The integers used
+ * for the test cases were just large enough to not throw an error (of course) but rather
+ * loop back around to the other side of the Integer class.  Fixed with a Long.
+ * 
+ * 
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
