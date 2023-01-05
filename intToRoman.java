@@ -22,7 +22,7 @@ public class intToRoman {
         		returnString += romanStrValues[i];
         	}
         	System.out.println(returnString);
-        	if (num < romanIntValues[i]) i++;
+        	if (num < romanIntValues[i]) i++; // this is so we don't move on until a place value is exhausted
 
         }
         return returnString;
