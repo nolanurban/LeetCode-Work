@@ -28,7 +28,7 @@ public class GetString {
 	public static void main(String args[]) {
 		
 		String testString = "aabbccdd";
-		System.out.println(getString(testString));
+		System.out.println(getString(testString));   
 		
 	}
 
