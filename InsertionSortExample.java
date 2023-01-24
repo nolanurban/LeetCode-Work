@@ -11,13 +11,15 @@ public class InsertionSortExample {
 			int last = i - 1;
 			
 			
-			while (last >= 0 && nums[last] > current) {
+			while (last >= 0 && nums[last] > current) {  // [ last | current ]
 				System.out.println("Switching " + nums[i] + " and " + nums[last]);
-				nums[last + 1] = nums[last]; // this is our swap out that will move our numbers in order backward
-				last = last - 1;
+				nums[last + 1] = nums[last]; // this is our swap out that will m		ove our numbers in order backward
+				last = last - 1; // this will continue to decrement our number until it is -1 to break it out
 			}
 			nums[last + 1] = current;
+			
 			System.out.println("Current array: ");
+			
 			for (int n : nums) System.out.print(n + " ");
 			System.out.println();
 
