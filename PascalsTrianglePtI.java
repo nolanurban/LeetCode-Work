@@ -34,7 +34,7 @@ public class PascalsTrianglePtI {
     public static void main(String args[]) {
     	
     	
-    System.out.println(generate(1));
+    System.out.println(generate(10));
     	
     	
     }

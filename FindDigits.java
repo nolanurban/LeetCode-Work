@@ -9,7 +9,7 @@ public class FindDigits {
     while (n > 0) {
         int divisor = n % 10;
         System.out.println(n + " " + divisor);
-        if (divisor != 0 &&  % divisor == 0) {
+        if (divisor != 0 &&  originalNumber % divisor == 0) {
         	System.out.println("divisible");
         	divisorCount++;
         }
