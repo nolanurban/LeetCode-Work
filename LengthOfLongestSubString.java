@@ -69,7 +69,7 @@ public class LengthOfLongestSubString {
 
 	public static void main(String args[]) {
 
-		String test = "bbbbb";
+		String test = "abcabcdabcdefabcdefgh";
 
 //		  System.out.println("Testing " + test + " and the max substring is: " + lengthOfLongestSubstring(test));
 		System.out.println("Testing " + test + " and the max substring is: " + lengthOfLongestSubstringHashSet(test));
