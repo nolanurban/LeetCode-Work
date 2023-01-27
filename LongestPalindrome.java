@@ -57,19 +57,19 @@ public class LongestPalindrome {
 			while (right > left) {
 				String checkString = s.substring(left, right);
 				String reversed = new StringBuilder(checkString).reverse().toString();
-//				System.out.println("Checking " + checkString + " against " + reversed);
-//				if (checkString.length() < returnString.length()) {
-//					System.out.println("Found palindrome larger");
-//					return returnString;
-//				}
+				System.out.println("Checking " + checkString + " against " + reversed);
+				if (checkString.length() < returnString.length()) {
+					System.out.println("Found palindrome larger");
+					return returnString;
+				}
 				right--;
 				if (reversed.charAt(0) != checkString.charAt(0)) { 
-//					System.out.println("Skipping");
+					System.out.println("Skipping");
 					continue;
 				}
 				if (checkString.equals(reversed) && checkString.length() > returnString.length()) {
 					returnString = checkString;
-//					System.out.println("**** palindrome: " + checkString);
+					System.out.println("**** palindrome: " + checkString);
 					break;
 				}
 			}
@@ -78,7 +78,7 @@ public class LongestPalindrome {
 		}
 		return returnString;
 	}
-
+	
 	public static void main(String args[]) {
 
 		String test = "twbiqwtafgjbtolwprpdnymaatlbuacrmzzwhkpvuwdtyfjsbsqxrlxxtqkjlpkvpxmlajdmnyepsmczmmfdtjfbyybotpoebilayqzvqztqgddpcgpelwmriwmoeeilpetbxoyktizwcqeeivzgxacuotnlzutdowiudwuqnghjgoeyojikjhlmcsrctvnahnoapmkcrqmwixpbtirkasbyajenknuccojooxfwdeflmxoueasvuovcayisflogtpxtbvcxfmydjupwihnxlpuxxcclbhvutvvshcaikuedhyuksbwwjsnssizoedjkbybwndxpkwcdxaexagazztuiuxphxcedqstahmevkwlayktrubjypzpaiwexkwbxcrqhkpqevhxbyipkmlqmmmogrnexsztsbkvebjgybrolttvnidnntpgvsawgaobycfaaviljsvyuaanguhohsepbthgjyqkicyaxkytshqmtxhilcjxdpcbmvnpippdrpggyohwyswuydyrhczlxyyzregpvxyfwpzvmjuukswcgpenygmnfwdlryobeginxwqjhxtmbpnccwdaylhvtkgjpeyydkxcqarkwvrmwbxeetmhyoudfuuwxcviabkqyhrvxbjmqcqgjjepmalyppymatylhdrazxytixtwwqqqlrcusxyxzymrnryyernrxbgrphsioxrxhmxwzsytmhnosnrpwtphaunprdtbpwapgjjqcnykgspjsxslxztfsuflijbeebwyyowjzpsbjcdabxmxhtweppffglvhfloprfavduzbgkw";

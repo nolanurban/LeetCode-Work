@@ -14,6 +14,7 @@ public class MergeSortedArray {
     		
     		// this is only checking first array
     		if (leftPointerNums1 >= 0 && nums1[leftPointerNums1] > nums2[rightPointerNums2]) {
+    			
     			nums1[rightPointerNums1] = nums1[leftPointerNums1];
     			leftPointerNums1--;
         		rightPointerNums1--;
@@ -32,6 +33,12 @@ public class MergeSortedArray {
     	
     	
     }
+    
+    public static void merge2(int[] nums1, int m, int[] nums2, int n) {
+    	
+    	
+    }
+
     public static void main(String args[]) {
     	int[] nums1 = { 1, 2, 3, 0, 0, 0 };
     	int m = 3;
