@@ -19,6 +19,6 @@ public class LinearIn {
 		int outer[] = { 1, 2, 4, 6 };
 		int inner[] = { 2, 4 };
 		
-		System.out.println("Checking outer and inner, should return true: " + linearIn(outer, inner));
+		System.out.println("Checking outer and inner, should return true: " + linearIn(outer, inner))
 	}
 }
